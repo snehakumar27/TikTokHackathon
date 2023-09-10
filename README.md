@@ -11,6 +11,10 @@ To get the ad-moderator assignments:
 Sample output:
 ![photo_2023-09-10 12 18 59](https://github.com/snehakumar27/TikTokHackathon/assets/75850030/2cf4b022-5c2d-4f0c-84ee-cf2ea569c786)
 
+Initial Match Score represents the scoring of the assignments before running the optimization algorithm. 
+Average Match Score represents the scoring of the assignments after running the optimization algorithm. 
+The closer the score is to 0, the better the matches are (see `Matching.ipynb` for more details). 
+
 The remaining python notebooks outline our steps of exploration and how we have come up with our final algorithm in the Python script. 
 
 For more details on the background and algorithm see: https://devpost.com/software/optimizing-advertisement-moderation-yip7lg
