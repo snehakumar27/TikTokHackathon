@@ -6,7 +6,8 @@ Authors: Sneha Kumar, Barnabas Ee, Huang Hongyi
 
 To get the ad-moderator assignments: 
 1. Run `pip install -r requirements.txt`
-2. Run `python3.9 ad_moderation.py`. It will directly outputs the assignments as csv in your local directory.
+2. Run `python3.9 ad_moderation.py`.
+3. The final assignments will be saved in `assignments.csv` in your local directory (an example from our run has been uploaded in this repo). 
 
 Sample output:
 ![photo_2023-09-10 12 18 59](https://github.com/snehakumar27/TikTokHackathon/assets/75850030/2cf4b022-5c2d-4f0c-84ee-cf2ea569c786)
