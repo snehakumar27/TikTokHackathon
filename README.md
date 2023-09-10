@@ -9,7 +9,7 @@ To get the ad-moderator assignments:
 2. Run `python3.9 ad_moderation.py`.
 3. The final assignments will be saved in `assignments.csv` in your local directory (an example from our run has been uploaded in this repo). 
 
-Sample output:
+Example of running the assignments:
 ![photo_2023-09-10 12 18 59](https://github.com/snehakumar27/TikTokHackathon/assets/75850030/2cf4b022-5c2d-4f0c-84ee-cf2ea569c786)
 
 Initial Match Score represents the scoring of the assignments before running the optimization algorithm. 
