@@ -116,6 +116,8 @@ for ad in all_ads:
   initial[ad] = random.choice(all_reviewers)
   rev.loc[initial[ad], 'assigned_ads'].append(ad)
 
+print("Inital (Random) Match Score: ", sum(match_score(ad, reviewer) for ad, reviewer in initial.items())/len(ads))
+
 def simulated_annealing(initial_assgn, T, alpha, max_iter):
   current = initial_assgn.copy()
 
@@ -151,7 +153,7 @@ def simulated_annealing(initial_assgn, T, alpha, max_iter):
   return current
 
 assignments = simulated_annealing(initial, T = 1000, alpha = 0.99, max_iter = 1000000)
-print(assignments)
+print("Average Match Score: ", sum(match_score(ad, reviewer) for ad, reviewer in assignments.items())/len(ads))
 
 #write it to a csv file
 import csv
@@ -166,3 +168,5 @@ with open(csv_file, mode='w', newline='') as file:
     # Write data from the assignment dictionary
     for key, value in assignments.items():
         writer.writerow([key, value])
+        
+print("Assignments saved in assignments.csv file in local directory")
